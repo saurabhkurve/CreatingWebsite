@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: blue;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:antiquewhite;
+    font-weight: 300;
+    background-image: url(https://seeklogo.com/images/S/sports-logo-BB73BFD7B1-seeklogo.com.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+
+nav{
+    float: left;
+    width: 30%;
+    height: 490px;
+    background-color: #ccc;
+    padding:20px;
+    /* text-align: center; */
+}
+nav,ul{
+    list-style-type: none;
+    padding:0;
+}
+li,a{
+    text-decoration: none;
+    color:red;
+}
+article{
+    float: left;
+    padding:20px;
+    width:70%;
+    background-color:hsl(0, 29%, 91%);
+    height:490px;
+}
+footer{
+    background-color:#777;
+    padding:10px;
+    text-align: center;
+    color: white;
+}
+section::after{
+    content: "";
+    display:table;
+    clear: both;
+}
+*{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding:0; */
+}
+@media(max-width:1500px){
+    nav,article{
+        width:100%;
+        height:auto;
+    }
+    footer{
+        width: 100%;
+        height:auto;
+    }
+}
